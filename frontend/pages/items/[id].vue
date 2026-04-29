@@ -24,7 +24,17 @@ definePageMeta({
 
 onMounted(async () => {
   if (!auth.token) {
-    await navigateTo('/login');
+    form.value = {
+      sku: 'INV-DEMO',
+      name: 'Demo Item',
+      description: 'Editing is running in demo mode until the database is ready.',
+      quantity: 12,
+      minQuantity: 4,
+      location: 'Demo Shelf',
+      price: 199,
+      status: 'ACTIVE',
+      categoryId: null
+    };
     return;
   }
 
