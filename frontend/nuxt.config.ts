@@ -1,4 +1,5 @@
 import Aura from '@primeuix/themes/aura';
+import process from 'node:process';
 
 export default defineNuxtConfig({
   ssr: true,

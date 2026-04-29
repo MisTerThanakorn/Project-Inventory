@@ -9,9 +9,15 @@ export const useItemsStore = defineStore('items', () => {
 
   const auth = useAuthStore();
 
-  const authHeaders = () => ({
-    Authorization: `Bearer ${auth.token.value}`
-  });
+  const authHeaders = () => {
+    if (!auth.token) {
+      throw new Error('Missing access token');
+    }
+
+    return {
+      Authorization: `Bearer ${auth.token}`
+    };
+  };
 
   const fetchItems = async () => {
     pending.value = true;
@@ -50,4 +56,3 @@ export const useItemsStore = defineStore('items', () => {
 
   return { items, summary, pending, fetchItems, fetchSummary, saveItem };
 });
-

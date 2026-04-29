@@ -2,15 +2,12 @@
   "name": "project-inventory",
   "private": true,
   "version": "0.1.0",
-  "workspaces": [
-    "frontend"
-  ],
   "scripts": {
-    "dev": "concurrently -n backend,frontend -c green,cyan \"python -m uvicorn backend.app.main:app --reload --port 4000\" \"npm run dev --workspace frontend\"",
+    "dev": "concurrently -n backend,frontend -c green,cyan \"python -m uvicorn backend.app.main:app --reload --port 4000\" \"npm --prefix frontend run dev\"",
     "dev:backend": "python -m uvicorn backend.app.main:app --reload --port 4000",
-    "dev:frontend": "npm run dev --workspace frontend",
-    "build": "npm run build --workspace frontend",
-    "lint": "npm run lint --workspace frontend"
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "lint": "npm --prefix frontend run lint"
   },
   "devDependencies": {
     "concurrently": "^9.0.1"

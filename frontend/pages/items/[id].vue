@@ -23,9 +23,14 @@ definePageMeta({
 });
 
 onMounted(async () => {
+  if (!auth.token) {
+    await navigateTo('/login');
+    return;
+  }
+
   const response = await $fetch<{ success: boolean; data: any }>(`/api/items/${route.params.id}`, {
     headers: {
-      Authorization: `Bearer ${auth.token.value}`
+      Authorization: `Bearer ${auth.token}`
     }
   });
 
