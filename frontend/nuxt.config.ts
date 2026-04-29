@@ -1,3 +1,4 @@
+import tailwindcss from '@tailwindcss/vite';
 import Aura from '@primeuix/themes/aura';
 import process from 'node:process';
 
@@ -12,6 +13,9 @@ export default defineNuxtConfig({
     }
   },
   modules: ['@pinia/nuxt', '@nuxtjs/i18n', '@primevue/nuxt-module'],
+  vite: {
+    plugins: [tailwindcss()]
+  },
   primevue: {
     options: {
       ripple: true,

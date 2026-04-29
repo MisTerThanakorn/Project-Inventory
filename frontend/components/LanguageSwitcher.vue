@@ -24,10 +24,10 @@ const languageOptions = [
 <style scoped>
 .switcher {
   display: grid;
-  gap: 0.35rem;
+  gap: 0.25rem;
 }
 
 .switcher-select {
-  min-width: 138px;
+  min-width: 132px;
 }
 </style>

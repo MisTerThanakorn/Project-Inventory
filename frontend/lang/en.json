@@ -6,7 +6,9 @@
   },
   "topbar": {
     "eyebrow": "Inventory control",
-    "manageItems": "Manage items"
+    "manageItems": "Manage items",
+    "live": "Live",
+    "quickAccess": "Quick access"
   },
   "sidebar": {
     "caption": "Designed as a clean starter for the full inventory system."
@@ -28,13 +30,47 @@
   },
   "dashboard": {
     "title": "Overview",
+    "headline": "See stock health at a glance.",
+    "subtitle": "Track items that need attention, monitor inventory health, and jump into actions without hunting through tables.",
+    "quickActions": "Quick actions",
+    "health": "Inventory health",
+    "healthTitle": "Current stock balance",
+    "watchlist": "Watchlist",
+    "watchlistTitle": "Items that need attention",
+    "recentActivity": "Recent activity",
+    "recentTitle": "Latest item updates",
     "items": "Total items",
+    "itemsLower": "items",
     "lowStock": "Low stock",
     "outOfStock": "Out of stock",
-    "categories": "Categories"
+    "categories": "Categories",
+    "healthy": "Healthy stock",
+    "attention": "Needs attention",
+    "lastUpdated": "Last updated",
+    "refresh": "Refresh data",
+    "viewItems": "View items",
+    "addItem": "Add item",
+    "summaryCopy": "Use this view to scan the current state, spot risks, and keep the inventory moving.",
+    "itemsHint": "All tracked items",
+    "lowStockHint": "Items below threshold",
+    "outOfStockHint": "Needs replenishment",
+    "categoriesHint": "Catalog structure",
+    "emptyWatchlist": "No items need attention right now.",
+    "noCategory": "No category"
   },
   "items": {
     "title": "Inventory items",
+    "headline": "Browse and manage stock records.",
+    "subtitle": "Keep every inventory item visible, sortable, and ready to update without losing the big picture.",
+    "quickActions": "Quick actions",
+    "workspaceTitle": "Workspace snapshot",
+    "workspaceCopyTitle": "Operational note",
+    "workspaceCopy": "Use this page to review live stock, spot items that need attention, and move directly into editing.",
+    "tableTitle": "Inventory table",
+    "catalogTitle": "Catalog view",
+    "catalogCopy": "A clean list for scanning product status, category, and last update at a glance.",
+    "live": "Live data",
+    "refresh": "Refresh items",
     "create": "New item",
     "sku": "SKU",
     "name": "Name",
@@ -44,7 +80,17 @@
     "status": "Status",
     "category": "Category",
     "description": "Description",
-    "updatedAt": "Updated at"
+    "updatedAt": "Updated at",
+    "totalItems": "Total items",
+    "totalHint": "All tracked records",
+    "lowHint": "Needs restock soon",
+    "outHint": "Requires immediate attention",
+    "categories": "Categories",
+    "categoriesHint": "Catalog structure",
+    "lowStock": "Low stock",
+    "outOfStock": "Out of stock",
+    "tableFocus": "Table-first layout",
+    "emptyState": "No inventory items found."
   }
 }
 

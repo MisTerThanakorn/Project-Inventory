@@ -67,16 +67,23 @@ const statusSeverity = (status: InventoryItem['status']) => {
 .inventory-table :deep(.p-datatable-table-container) {
   border-radius: 18px;
   overflow: hidden;
+  background: rgba(2, 6, 23, 0.34);
+  border: 1px solid var(--border);
 }
 
 .inventory-table :deep(.p-datatable-thead > tr > th) {
-  background: rgba(148, 163, 184, 0.08);
-  color: #cbd5e1;
+  background: rgba(148, 163, 184, 0.1);
+  color: #e2e8f0;
   border-color: var(--border);
 }
 
 .inventory-table :deep(.p-datatable-tbody > tr > td) {
   border-color: var(--border);
+  background: rgba(15, 23, 42, 0.34);
+}
+
+.inventory-table :deep(.p-datatable-tbody > tr:hover > td) {
+  background: rgba(56, 189, 248, 0.08);
 }
 
 .inventory-table :deep(.p-tag) {

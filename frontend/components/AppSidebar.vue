@@ -1,5 +1,5 @@
 <template>
-  <aside class="sidebar card">
+  <aside class="sidebar card m-4">
     <div class="brand">
       <div class="logo">PI</div>
       <div class="brand-copy">
@@ -50,7 +50,6 @@ const handleNavigate = (navigate: () => void) => {
 
 <style scoped>
 .sidebar {
-  margin: 1rem;
   padding: 1.2rem;
   display: grid;
   gap: 1.2rem;
