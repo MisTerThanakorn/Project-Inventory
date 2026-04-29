@@ -1,0 +1,213 @@
+:root {
+  --bg: #0b1120;
+  --panel: rgba(15, 23, 42, 0.88);
+  --panel-strong: #111827;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --border: rgba(148, 163, 184, 0.18);
+  --accent: #38bdf8;
+  --accent-2: #22c55e;
+  --danger: #ef4444;
+  --shadow: 0 22px 70px rgba(15, 23, 42, 0.38);
+  --page-width: 1240px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#__nuxt {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 15% 15%, rgba(56, 189, 248, 0.20), transparent 26%),
+    radial-gradient(circle at 85% 75%, rgba(34, 197, 94, 0.14), transparent 24%),
+    linear-gradient(135deg, #020617 0%, #0b1120 46%, #111827 100%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#__nuxt {
+  isolation: isolate;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.card {
+  border: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow);
+  border-radius: 24px;
+}
+
+.surface {
+  background: rgba(15, 23, 42, 0.58);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.field label {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(2, 6, 23, 0.55);
+  color: var(--text);
+  padding: 0.8rem 0.9rem;
+  outline: none;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.12);
+  background: rgba(2, 6, 23, 0.72);
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid.cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid.cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.auto-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.section-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.15rem;
+}
+
+.section-card {
+  padding: 1rem 1.1rem;
+}
+
+.container {
+  width: min(var(--page-width), calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.page {
+  padding: 1rem 1rem 1.5rem;
+}
+
+.table-card {
+  overflow: hidden;
+}
+
+.stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.p-component {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+
+.p-button {
+  border-radius: 14px;
+}
+
+.p-inputtext,
+.p-inputnumber-input,
+.p-password-input,
+.p-select,
+.p-textarea {
+  width: 100%;
+}
+
+.p-card {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.p-drawer {
+  background: transparent;
+}
+
+.p-drawer-content {
+  padding: 0;
+}
+
+@media (max-width: 960px) {
+  .page {
+    padding: 0.9rem;
+  }
+
+  .grid.cols-2,
+  .grid.cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    width: min(var(--page-width), calc(100% - 1rem));
+  }
+
+  body {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 640px) {
+  .card {
+    border-radius: 20px;
+  }
+
+  .toolbar {
+    align-items: stretch;
+  }
+}

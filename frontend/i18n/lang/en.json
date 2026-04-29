@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "items": "Items",
+    "login": "Login"
+  },
+  "topbar": {
+    "eyebrow": "Inventory control",
+    "manageItems": "Manage items"
+  },
+  "sidebar": {
+    "caption": "Designed as a clean starter for the full inventory system."
+  },
+  "language": {
+    "label": "Language"
+  },
+  "common": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "search": "Search"
+  },
+  "login": {
+    "title": "Sign in",
+    "subtitle": "Use your inventory account to continue.",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in"
+  },
+  "dashboard": {
+    "title": "Overview",
+    "items": "Total items",
+    "lowStock": "Low stock",
+    "outOfStock": "Out of stock",
+    "categories": "Categories"
+  },
+  "items": {
+    "title": "Inventory items",
+    "create": "New item",
+    "sku": "SKU",
+    "name": "Name",
+    "quantity": "Quantity",
+    "minQuantity": "Minimum",
+    "price": "Price",
+    "status": "Status",
+    "category": "Category",
+    "description": "Description",
+    "updatedAt": "Updated at"
+  }
+}
+
